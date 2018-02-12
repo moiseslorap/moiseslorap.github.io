@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../media/background.jpg');
+    background-size:cover;
+    background-position:center;
+
+  }
+
+body {
+
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 10%;
+  text-align: center;
+  color: white;
+}
+
+.box-landing{
+  width: 330px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.size{
+  width: 50px;
+  height: 50px;
+}
+.down{
+  margin-top: 15%;
+}
+
+.purple{
+  background-color:#6e5494;
+}
+
+.arrow{
+
+  display: inline-block;
+  margin-top: 120px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.arrow:hover{
+  text-decoration: none;
+  color:lightgrey;
+}
