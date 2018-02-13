@@ -22,10 +22,52 @@ body {
   color: white;
 }
 
+.box {
+
+  height:50%;
+
+  background-color: transparent;
+  text-align:center;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.box a{
+  text-decoration: none;
+  color:white;
+  align-self: flex-end;
+  max-width: 50%;
+
+}
+.box a:hover{
+  text-decoration: none;
+  color:darkgrey;
+}
+
 .box-landing{
   width: 330px;
   padding: 20px;
   margin: 0 auto;
+}
+.box-landing h1{
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0.5px;
+  padding-top: 25px;
+}
+
+.box-landing p{
+  font-size: 14pt;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 0.5px;
+
 }
 
 .size{
@@ -38,19 +80,4 @@ body {
 
 .purple{
   background-color:#6e5494;
-}
-
-.arrow{
-
-  display: inline-block;
-  margin-top: 120px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-}
-.arrow:hover{
-  text-decoration: none;
-  color:lightgrey;
 }
