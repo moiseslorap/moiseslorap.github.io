@@ -70,7 +70,7 @@
               <img class="rounded-circle" src="assets/media/portrait.jpg" width="200px;" height="200px;" alt="Profile Picture">
               <h1 class="section-heading">&#60; Moisés Lora &#47;&#62; </h1>
               <h2>I am a <span id="js-rotating">Software Engineer, Hardworker, Leader, Team Player, Fast Learner, Visionary</span> </h2>
-              <!--<a href="#aboutme" class="btn btn-outline btn-xl js-scroll-trigger">MORE ABOUT ME!</a> -->
+              <a href="#aboutme" class="btn btn-outline btn-xl js-scroll-trigger">MORE ABOUT ME!</a>
             </div>
           </div>
         </div>
@@ -296,67 +296,66 @@
           <h2 class="section-heading text-center">Contact</h2><hr>
         </div>
         <div class="col-lg-6" id="panel">
-          <form>
+          <form action="https://www.enformed.io/v8l1h2tc" method="POST" >
             <br>
             <div class="group">
-                <input type="text" required>
+                <input name="name" type="text" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Name</label>
             </div>
 
             <div class="group">
-                <input type="text" required>
+                <input name="email" type="email" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Email</label>
             </div>
 
             <div class="group">
-                <input type="text" required>
+                <input name="subject" type="text" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Subject</label>
             </div>
 
             <div class="group">
-                <input type="text" required>
+                <input name="message" type="text" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Message</label>
             </div>
             <div class="group">
-                <center> <button type="submit" class="btn btn-basic">Submit <span class="glyphicon glyphicon-send"></span></button></center>
+                <input type="hidden" name="*redirect" value="http://moiseslorap.me/main.html#contact" />
+                <center><button type="submit" class="btn btn-basic mx-auto">Submit <span class="fa fa-send"></span></button></center>
             </div>
         </form>
         </div>
-        <div class="col-lg-6 text-center mx-auto align-items-center justify-content-center">
-          <br><br><br>
+        <div class="col-lg-6 text-center mx-auto align-items-center justify-content-center" id="icons">
           <img class="rounded-circle" src="assets/media/portrait.jpg" width="200px;" height="200px;" alt="Profile Picture">
           <h1>&#60; Moisés Lora &#47;&#62; </h1>
-          <p>Software Engineer </p>
-
-          <p>
-          <a target="_blank" href="assets\media\Moisés Lora Resume.pdf"  class="btn btn-social-icon btn-pinterest size" data-toggle="tooltip" data-placement="Top" title="Résumé"><span class="fa fa-file-text down"></span></a>
-          <a target="_blank" href="mailto:mal3941@rit.edu" class="btn btn-social-icon btn-openid size" data-toggle="tooltip" data-placement="Top" title="Email"><span class="fa fa-envelope-o down"></span></a>
-          <a target="_blank" href="tel:+15854349685" class="btn btn-social-icon btn-vk size" data-toggle="tooltip" data-placement="Top" title="Phone"><span class="fa fa-phone down"></span></a>
-          <a target="_blank" href="https://www.linkedin.com/in/moiseslorap/" class="btn btn-social-icon btn-linkedin size" data-toggle="tooltip" data-placement="Top" title="LinkedIn"><span class="fa fa-linkedin down"></span></a>
-          <a target="_blank" href="https://www.github.com/moiseslorap/" class="btn btn-social-icon btn-github size purple" data-toggle="tooltip" data-placement="Top" title="Github"><span class="fa fa-github down"></span></a>
-          </p>
+          <h5>Software Engineer </h5>
+          <div class="icons">
+            <a target="_blank" href="assets\media\Moisés Lora Resume.pdf"  data-toggle="tooltip" data-placement="Bottom" title="Résumé"><span class="fa fa-file-text fa-2x"></span></a>
+            <a target="_blank" href="mailto:mal3941@rit.edu"  data-toggle="tooltip" data-placement="Bottom" title="Email"><span class="fa fa-envelope-o fa-2x"></span></a>
+            <a target="_blank" href="tel:+15854349685" data-toggle="tooltip" data-placement="Bottom" title="Phone"><span class="fa fa-phone fa-2x"></span></a>
+            <a target="_blank" href="https://www.linkedin.com/in/moiseslorap/" data-toggle="tooltip" data-placement="Bottom" title="LinkedIn"><span class="fa fa-linkedin fa-2x"></span></a>
+            <a target="_blank" href="https://www.github.com/moiseslorap/" data-toggle="tooltip" data-placement="Bottom" title="Github"><span class="fa fa-github fa-2x"></span></a>
+          </div>
         </div>
 
   </section> <!-- /contact -->
 
     <footer>
       <div class="container">
-        <p>&copy; Moisés Lora 2018. All Rights Reserved.</p>
+        <p>&copy; <a href="http://www.moiseslorap.me/main.html#page-top">Moisés Lora </a> 2018. All Rights Reserved.</p>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/jquery.easing.min.js"></script>
     <script src="assets/scripts/main.min.js"></script>
-    <script src="assets/scripts/tooltip.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
     <script src="assets/scripts/morphext.min.js"></script>
     <script src="assets/scripts/rotation.js"></script>
   </body>
