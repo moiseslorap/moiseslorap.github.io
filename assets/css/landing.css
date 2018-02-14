@@ -22,6 +22,8 @@ body {
   color: white;
 }
 
+
+
 .box {
 
   height:50%;
@@ -38,6 +40,18 @@ body {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width:768px){
+  body{
+    padding-top: 5%;
+  }
+
+  .box{
+    height:35%;
+    padding: 0;
+  }
+
+}
+
 .box a{
   text-decoration: none;
   color:white;
@@ -52,7 +66,6 @@ body {
 
 .box-landing{
   width: 330px;
-  padding: 20px;
   margin: 0 auto;
 }
 .box-landing h1{
