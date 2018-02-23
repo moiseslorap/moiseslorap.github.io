@@ -1,0 +1,95 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ed1e23;
+  margin: 0 auto;
+  color:white;
+}
+
+a {
+  color: white;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  margin: 0 auto;
+}
+
+a:hover, a:focus {
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#landing{
+  margin: 0 auto;
+  width: 600px;
+  padding-top: 20%;
+  animation: fadein 1s;
+}
+#diploma{
+  margin: 0 auto;
+  width: 600px;
+  padding-top: 20%;
+  display: none;
+  animation: fadein 1s;
+}
+
+#text1{
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 20%;
+  display: none;
+  text-align: center;
+}
+
+#text2{
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 20%;
+  display: none;
+  text-align: center;
+  animation: fadein 1s;
+
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  color: white;
+  border-color: white;
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  border-radius: 300px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
