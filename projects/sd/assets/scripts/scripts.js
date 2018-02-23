@@ -17,5 +17,5 @@ function showText(){
   setTimeout(function(){
     document.getElementById("text1").style.display="none";
     document.getElementById("text2").style.display="block";
-  },4000);
+  },6000);
 }
