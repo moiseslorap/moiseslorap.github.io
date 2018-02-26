@@ -45,7 +45,7 @@ p {
 
 #text1{
   margin: 0 auto;
-  width: 800px;
+  width: 1000px;
   padding-top: 20%;
   display: none;
   text-align: center;
@@ -53,12 +53,21 @@ p {
 
 #text2{
   margin: 0 auto;
-  width: 800px;
+  width: 1000px;
   padding-top: 20%;
   display: none;
   text-align: center;
   animation: fadein 1s;
 
+}
+
+#minilogo{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin: 1em;
+  display: none;
+  animation: fadein 1s;
 }
 
 @keyframes fadein {
@@ -92,4 +101,29 @@ p {
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
+}
+
+.modal-dialog{
+  max-width: 50%;
+}
+
+.modal-container{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input{
+  background-color: transparent;
+}
+
+input:hover{
+  background-color:rgba(0, 0, 0, 0.1);
 }

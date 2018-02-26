@@ -6,7 +6,7 @@
   	<title>SD - University of Art & Design</title>
 
   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -23,27 +23,30 @@
         </div>
       </div>
       <div id="diploma">
-        <div class="form-group row">
-          <label for="name" class="col-sm-4 col-form-label"> Type your name here: </label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control form-control-sm" id="uname" name="name">
+        <form id="my-form" >
+          <div class="form-group row">
+            <label for="name" class="col-sm-4 col-form-label">Type your name here: </label>
+            <input type="text" class="col-sm-8 form-control form-control-sm" id="name" name="name">
           </div>
-        </div>
-        <div class="row">
-          <a onclick="saveInput()" value="Create your diploma" class="btn btn-outline btn-xl" data-toggle="modal" data-target="#myModal"> Create Diploma!</a>
-        </div>
-
+          <div class="form-group row justify-content-md-center">
+              <input type="submit" id="submit" class="btn btn-outline btn-xl" value="Create your Diploma" data-toggle="modal" data-target="#myModal" />
+          </div>
+        </form>
+        
         <!-- The Modal -->
         <div class="modal fade" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- Modal body -->
               <div class="modal-body">
-                <img class="img-fluid" src="assets/media/diploma.png">
+                <div class="modal-container" id="ToPrint">
+                  <img class="img-fluid" src="assets/media/diploma.png">
+                  <div class="centered"><p id="diploma-name" style="font-size:20pt; font-weight:500;"></div>
+                </div>
               </div>
               <!-- Modal footer -->
               <div class="modal-footer">
-                <button onclick="showText()" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button onclick="showText();" type="button" class="btn btn-danger" data-dismiss="modal">Print</button>
               </div>
 
             </div>
@@ -51,12 +54,15 @@
         </div>
       </div>
       <div id="text1">
-        <h2 style="animation: fadein 1s">do you need a degree to be successful? </h2>
-        <h2 style="animation: fadein 3s">is this who you really want to be? </h2>
-        <h2 style="animation: fadein 5s">or what they want you to be? </h2>
+        <p style="animation: fadein 1s; font-size:32pt; font-weight:300;">do you need a degree to be successful?</p>
+        <p style="animation: fadein 3s; font-size:32pt; font-weight:300;">is this who you really want to be?</p>
+        <p style="animation: fadein 5s; font-size:32pt; font-weight:300;">or what they want you to be?</p>
       </div>
       <div id="text2">
-        <h1>Who am I?</h1>
+        <p style="animation: fadein 1s; font-size:100pt; font-weight:300;">WHO AM I?</p>
+      </div>
+      <div id="minilogo">
+        <img class="img-fluid" src="assets/media/logo.png" width="200px" height="200px">
       </div>
 
     </main>
