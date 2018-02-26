@@ -25,6 +25,7 @@ function showText(){
   },6000);
   setTimeout(function(){
     $("#text2").hide();
+    $("#minilogo").hide();
     $("#landing").show();
   },10000);
 }
@@ -54,5 +55,4 @@ function printDiv()
   newWin.document.close();
 
   setTimeout(function(){newWin.close();},10);
-
 }
