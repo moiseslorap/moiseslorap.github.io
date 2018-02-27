@@ -9,6 +9,13 @@ $(function(){
   });
 });
 
+$('#printDiv').on("click", function () {
+      $('#ToPrint').printThis({
+        importCSS: true
+      });
+    });
+
+
 function displayDiploma(){
   $("#landing").hide();
   $("#diploma").show();
@@ -40,19 +47,3 @@ $(function(){
       e.preventDefault();
   });
 });
-
-function printDiv() 
-{
-
-  var divToPrint=document.getElementById('ToPrint');
-
-  var newWin=window.open('','Print-Window');
-
-  newWin.document.open();
-
-  newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
-
-  newWin.document.close();
-
-  setTimeout(function(){newWin.close();},10);
-}
