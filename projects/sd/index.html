@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <style type="text/css" media="print">
+      @page { size: landscape; }
+    </style>
   </head>
   <body>
     <main>
@@ -19,39 +21,24 @@
         </div>
         <br><br>
         <div class="row align-items-center">
-          <a onclick="displayDiploma();" class="btn btn-outline btn-xl"> Click to Enter </a>
+          <a onclick="displayTextInput();" class="btn btn-outline btn-xl"> Click to Enter </a>
         </div>
       </div>
-      <div id="diploma">
+      <div id="textinput">
         <form id="my-form" >
           <div class="form-group row">
             <label for="name" class="col-sm-4 col-form-label">Type your name here: </label>
-            <input type="text" class="col-sm-8 form-control form-control-sm" id="name" name="name">
+            <input type="text" class="col-sm-8 form-control form-control-sm" id="name" name="name" required>
           </div>
           <div class="form-group row justify-content-md-center">
-              <input type="submit" id="submit" class="btn btn-outline btn-xl" value="Create your Diploma" data-toggle="modal" data-target="#myModal" />
+            <a onclick="displayDiploma();" class="btn btn-outline btn-xl">Create your Diploma</a>
           </div>
         </form>
+      </div>
         
         <!-- The Modal -->
-        <div class="modal fade" id="myModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal body -->
-              <div class="modal-body">
-                <div class="modal-container" id="ToPrint">
-                  <img class="img-fluid" src="assets/media/diploma.png">
-                  <div class="centered"><p id="diploma-name" style="font-size:20pt; font-weight:500;"></div>
-                </div>
-              </div>
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button id="printDiv" type="button" class="btn btn-danger" data-dismiss="modal">Print</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
+      <div id="diploma">
+        
       </div>
       <div id="text1">
         <p style="animation: fadein 1s; font-size:32pt; font-weight:300;">do you need a degree to be successful?</p>

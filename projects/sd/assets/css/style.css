@@ -35,12 +35,26 @@ p {
   padding-top: 20%;
   animation: fadein 1s;
 }
-#diploma{
+#textinput{
   margin: 0 auto;
   width: 600px;
   padding-top: 20%;
   display: none;
   animation: fadein 1s;
+}
+
+#diploma{
+  margin: 0 auto;
+  display: none;
+  animation: fadein 1s;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas{
+  margin: 0 auto;
+  display: block;
+  padding-top:2%;
 }
 
 #text1{
@@ -101,29 +115,4 @@ p {
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
-}
-
-.modal-dialog{
-  max-width: 50%;
-}
-
-.modal-container{
-  position: relative;
-  text-align: center;
-  color: black;
-}
-
-.centered {
-  position: absolute;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-input{
-  background-color: transparent;
-}
-
-input:hover{
-  background-color:rgba(0, 0, 0, 0.1);
 }
