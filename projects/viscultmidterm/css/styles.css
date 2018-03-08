@@ -3,9 +3,13 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: #EEEEEE;
 }
+#about{
+  background-color: #E0E0E0;
+}
+
 
 html {
   width: 100%;
@@ -20,7 +24,6 @@ h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -43,12 +46,12 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3;
+  color: black;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #1d9b6c;
+  color: darkgray;
 }
 
 #mainNav {
@@ -124,8 +127,15 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: black;
+  background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,11 +148,14 @@ a:focus, a:hover {
 }
 
 .masthead .intro-body .brand-heading {
-  font-size: 50px;
+  font-size: 40px;
+  margin-bottom: 2em;
 }
 
 .masthead .intro-body .intro-text {
   font-size: 18px;
+  margin-bottom: 2em;
+
 }
 
 @media (min-width: 768px) {
@@ -151,10 +164,13 @@ a:focus, a:hover {
     padding: 0;
   }
   .masthead .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 65px;
+    margin-bottom: 2em;
   }
   .masthead .intro-body .intro-text {
     font-size: 22px;
+    margin-bottom: 2em;
+
   }
 }
 
@@ -180,8 +196,8 @@ a:focus, a:hover {
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 8em;
+    padding-bottom: 5em;
 }
 
 .download-section {
@@ -201,8 +217,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 4em;
+    padding-bottom: 5em;
   }
   #map {
     height: 350px;
@@ -255,6 +271,7 @@ ul.banner-social-buttons {
 
 footer {
   padding: 50px 0;
+  background-color: #BDBDBD;
 }
 
 footer p {
