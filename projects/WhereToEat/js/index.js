@@ -66,9 +66,14 @@ function onSuccess(position) {
         console.log(lat, lng);
         //Google Maps
         myLatlng = new google.maps.LatLng(lat, lng);
-        mapOptions = { zoom: 13, center: myLatlng, mapTypeId: google.maps.MapTypeId.ROADMAP };
+        mapOptions = {
+			zoom: 13,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			gestureHandling: 'greedy',
+			mapTypeControl: false    
+		};
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
     }
     requestRestaurants();
     requestCategories();
