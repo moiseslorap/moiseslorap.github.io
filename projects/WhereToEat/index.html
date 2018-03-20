@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
+  <title>Where to Eat</title>
+
+
+</head>
+
+<body>
+  <nav>
+    <a onclick="openNav()">&#9776;</a>
+    <span>Where to eat</span>
+  </nav>
+  <div id="mySidenav" class="sidenav">
+    <div style="background-color:white;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="queries">
+
+    <div style="margin-bottom:1em">
+      <label for="categories">Filter by categories</label>
+      <select id="categories" name="category">
+        <option></option>
+      </select>
+    </div>
+    <label for="cuisines">Filter by cuisines</label>
+    <select id="cuisines" name="cuisines[]" multiple="multiple">
+    </select>
+    <!-- <button onclick="saveCuisines();">Apply</button> -->
+    <div style="margin-top:1em">
+      <label for="search" style="margin-top:1em;">Filter by search query</label>
+      <input id="search" type="text" name="Search" placeholder="Enter your search query">
+      <!-- <button onclick="saveSearch();">Apply</button> -->
+    </div>
+    <button class="btn" onclick="applyAll();"><span>Apply any!</span></button>
+
+  </div>
+  <div id="map-canvas">
+    <h3>Loading.... Please wait...</h3>
+  </div>
+  <div class="card" id="restaurants">
+
+  </div>
+
+  <script src="cordova.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN9Dwitb2cjEuouUSW2As_Ot5vrzLmhY0&libraries=geometry"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+</body>
+
+</html>
