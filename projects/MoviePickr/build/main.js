@@ -106,7 +106,7 @@ var MoviesPage = /** @class */ (function () {
     MoviesPage.prototype.request = function () {
         var _this = this;
         var key = 'bb7201bc';
-        var url = "http://www.omdbapi.com/?s=" + this.query + "&type=movie&plot=full&apikey=" + key;
+        var url = "https://www.omdbapi.com/?s=" + this.query + "&type=movie&plot=full&apikey=" + key;
         //url
         //param
         //headers
@@ -180,7 +180,7 @@ var TheatherDetailsPage = /** @class */ (function () {
         var day = currentTime.getDate();
         var year = currentTime.getFullYear();
         var date = year + '-' + month + '-' + day;
-        var url = "http://data.tmsapi.com/v1.1/theatres/" + this.theatherDetails.theatreId + "/showings?startDate=" + date + "&numDays=2&api_key=" + key;
+        var url = "https://data.tmsapi.com/v1.1/theatres/" + this.theatherDetails.theatreId + "/showings?startDate=" + date + "&numDays=2&api_key=" + key;
         //param
         //headers
         console.log(url);
@@ -278,7 +278,7 @@ var TheathersPage = /** @class */ (function () {
         // let day = currentTime.getDate();
         // let year = currentTime.getFullYear();
         // let date = year + '-' + month + '-' + day;
-        var url = "http://data.tmsapi.com/v1.1/theatres?&lat=" + lat + "&lng=" + lng + "&radius=10&api_key=" + key;
+        var url = "https://data.tmsapi.com/v1.1/theatres?&lat=" + lat + "&lng=" + lng + "&radius=10&api_key=" + key;
         //param
         //headers
         this.http.get(url, {}, {})
@@ -651,7 +651,7 @@ var MovieDetailsPage = /** @class */ (function () {
     MovieDetailsPage.prototype.ionViewDidLoad = function () {
         var _this = this;
         console.log(this.movieDetails);
-        var url = "http://www.omdbapi.com/?t=" + encodeURI(this.movieDetails.Title) + "&type=movie&plot=full&apikey=bb7201bc";
+        var url = "https://www.omdbapi.com/?t=" + encodeURI(this.movieDetails.Title) + "&type=movie&plot=full&apikey=bb7201bc";
         console.log(url);
         this.http.get(url, {}, {})
             .then(function (response) {
